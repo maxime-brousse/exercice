@@ -1,0 +1,303 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3, h2, h1 {
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	font-family: 'Quicksand', sans-serif;
+}
+a {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* navigation */
+.divNav {
+	height: 55px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #d3d3d3; 
+}
+.navLogo {
+	height: 50px;
+}
+.divNavText {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+}
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+a:hover {
+	color: #fd7e14;
+}
+.navLink {
+	font-size: 16px;
+	color: grey;
+	padding-left: 1%;
+}
+.navPicto {
+	padding-left: 1%;
+}
+
+/* contenu */
+.divContenu {
+	margin-top: 4%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+} 
+/* contenu-titre */ 
+.divContenuTitre {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 100%;
+}
+h1 {
+	margin-bottom: 2.5%;
+}
+
+/* contenu-argument */
+.divContenuArgument {
+	height: 300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;	
+	width: 100%;
+	margin-top: 5.5%;
+}
+.argumentPicto {
+	height: 40px;
+}
+.divArgument {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+.Argument {
+	height: 200px;
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.Picto {
+	font-size: 50px;
+	color: #fd7e14;
+}
+.argumentP {
+	text-align: center;
+}
+
+/* contenu-explication */
+.divContenuExplication {
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.divContenuExplicationEven, .divContenuExplicationOdd {
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+}
+.divContenuExplicationOdd {
+	flex-direction: row-reverse;
+}
+.divExplicationText {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	width: 45%;
+	height: 400px;
+}
+.explicationScreen {
+	width: 35%;
+}
+.explicationArgument {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+#Argument3Position {
+	align-items: center;
+}
+.explicationOrange {
+	color: #fd7e14;
+}
+.explicationP {
+	font-size: 15px;
+	width: 90%;
+}
+#Ext {
+	width: 100%;
+}
+#Argument3text {
+	width: 80%;
+}
+.explicationBouton {
+	color: white;
+	height: 40px;
+	width: 45%;
+	background-color: #fd7e14;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.explicationBoutonThin {
+	height: 40px;
+	width: 15%;
+	border: 1px solid #d3d3d3;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.explicationBoutonThin:hover {
+	color: #fd7e14;
+}
+
+/* contenu-slider */
+.divContenuSlider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 5%;
+}
+.divSlider {
+    width: 40%;
+    margin: 100px auto;
+}
+.slick-active {
+    opacity: 0.35;
+}
+.slick-current {
+  opacity: 1;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+
+/* Responsive-Smartphone */
+@media screen and (max-width: 420px) {
+	body {
+        overflow-x: hidden;
+    }
+
+    /* navigation */
+    .navLogo {
+    	height: 35px;
+    }
+    .divNavText {
+    	width: 70%;
+    }
+    .navLink {
+    	font-size: 8px;
+    	margin-left: 1.5%;
+    }
+    .navPicto {
+		font-size: 10px;
+		margin-left: 1.5%;
+	}
+
+	/* contenu-titre */ 
+	h1 {
+		font-size: 16px;
+		margin-top: 5%;
+	}
+	.divContenuTitre p {
+		font-size: 12px;
+		width: 90%;
+		text-align: center;
+	}
+
+	/* contenu-argument */
+	.divContenuArgument {
+		height: auto;
+	}
+	h2, h3 {
+		font-size: 14px;
+	}
+	.argumentPicto {
+		height: 20px;
+		margin-bottom: 5%;
+	}
+	.divArgument {
+		width: 100%;
+		flex-direction: column;
+	}
+	.Argument {
+		height: 125px;
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.Picto {
+		font-size: 40px;
+	}
+	.argumentP {
+		font-size: 12px;
+		width: 75%;
+	}
+
+	/* contenu-explication */
+	.divContenuExplicationEven {
+		flex-direction: column;
+	}
+	.divContenuExplicationOdd {
+		flex-direction: column;
+	}
+	.divExplicationText {
+		height: auto;
+		width: 100%;
+	}
+	.explicationArgument {
+		width: 75%;
+		margin-bottom: 5%;
+	}
+	.explicationP {
+		font-size: 10px;
+	}
+	#Ext {
+		width: 75%;
+		margin-bottom: 5%;
+	}
+	.explicationBouton {
+		height: 25px;
+		width: 40%;
+		margin-bottom: 5%;
+	}
+	.explicationBouton a {
+		font-size: 10px;
+	}
+	.explicationScreen {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	/* contenu-slider */
+	.divSlider {
+		width: 90%;
+		margin: 25px;
+	}
+}
